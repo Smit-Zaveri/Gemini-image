@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Baking with the Gemini API</title>
+</head>
+
+<body>
+  <main>
+    <h1>Baking with the Gemini API</h1>
+    <form>
+      <div class="image-picker">
+        <label for="image-upload" class="custom-file-upload">
+          <input id="image-upload" type="file" accept="image/*">
+          Choose an image
+        </label>
+      </div>
+      <div class="prompt-box">
+        <label>
+          <input name="prompt" placeholder="Enter instructions here" type="text"
+            value="Provide a description for the uploaded image">
+        </label>
+        <button type="submit">Go</button>
+      </div>
+    </form>
+    <p class="output">(Results will appear here)</p>
+  </main>
+
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
